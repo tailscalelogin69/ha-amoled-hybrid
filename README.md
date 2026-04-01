@@ -1,6 +1,13 @@
-# Home Assistant Amoled Dark Theme
-An amoled dark theme for Home Assistant.
+# Home Assistant Amoled Dark Dynamic Theme
+An amoled dark theme for Home Assistant. 
+
 There are two versions of the theme, one that makes everything black and one that only makes the background black.
+
+My fork just is a QoL improvement, this makes HA use the default light mode theme when device is in light mode, and it dynamically switches to amoled when device is in dark mode.
+
+## Credits:
+
+Amoled dark theme made by Xitee1: https://github.com/Xitee1/ha-amoled-theme
 
 ## Amoled
 <img src="https://github.com/user-attachments/assets/c5a3ddc6-2a63-4fcd-aa06-b53806bdae61" alt="Amoled Screenshot 1" width="220"/>
