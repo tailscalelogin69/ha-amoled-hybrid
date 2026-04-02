@@ -11,7 +11,7 @@ Amoled dark theme made by Xitee1: https://github.com/Xitee1/ha-amoled-theme
 
 ## Add via HACS
 1. HACS → Frontend → 3 dots → Custom repositories  
-2. Add this repo URL(https://github.com/tailscalelogin69/ha-amoled-hybrid/) and choose category **Themes** in the dropdown
+2. Add this repo URL(https://github.com/tailscalelogin69/ha-amoled-hybrid/) and choose category **Themes**
 3. Search for "Amoled" in HACS and install
 
 (You can also just copy the YAML into your `themes/` folder and `!include` it.)
