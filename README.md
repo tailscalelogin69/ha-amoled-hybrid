@@ -2,6 +2,8 @@
 An amoled dark theme for Home Assistant.
 There are two versions of the theme, one that makes everything black and one that only makes the background black.
 
+HA use the default light mode theme when device is in light mode, and it dynamically switches to amoled/amoled+ when device is in dark mode.
+
 ## Amoled
 <img src="https://github.com/user-attachments/assets/c5a3ddc6-2a63-4fcd-aa06-b53806bdae61" alt="Amoled Screenshot 1" width="220"/>
 <img src="https://github.com/user-attachments/assets/3d1effcc-4413-41f9-8b0b-75ef821cb886" alt="Amoled Screenshot 2" width="220"/>
