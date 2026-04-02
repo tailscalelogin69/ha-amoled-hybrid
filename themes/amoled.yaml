@@ -1,4 +1,4 @@
-Amoled Dyn:
+Amoled:
   modes:
     light: {}
     dark:
@@ -8,7 +8,7 @@ Amoled Dyn:
       sidebar-background-color: rgba(0, 0, 0, 1) # Sidebar BG color
       primary-background-color: rgba(0, 0, 0, 1) # Settings, .. BG color
 
-Amoled+ Dyn:
+Amoled+:
   modes:
     light: {}
     dark:
