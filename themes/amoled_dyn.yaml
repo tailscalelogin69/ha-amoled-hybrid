@@ -1,22 +1,77 @@
+# Amoled Dyn / Amoled+ Dyn
+# Dynamic AMOLED themes for Home Assistant.
+# - Light mode: inherits the official default light theme (empty modes.light)
+# - Dark mode: pure black / near-black surfaces for OLED/AMOLED
+# Compatible with Home Assistant 2024.x – 2026.x (modes + common CSS vars)
+#
+# Usage:
+# 1. Install via HACS (Themes) or copy this file into config/themes/
+# 2. frontend: themes: !include_dir_merge_named themes
+# 3. Profile → Theme → select "Amoled Dyn" or "Amoled+ Dyn"
+# 4. Profile → Theme mode → Auto  (follows system light/dark)
+
 Amoled Dyn:
+  # Mode-independent (applied on top of the chosen base theme)
   modes:
-    light: {}
+    light: {}   # inherit default HA light theme completely
     dark:
-      lovelace-background: rgba(0, 0, 0, 1) # Lovelace BG color
-      ha-card-background: rgba(20, 20, 20, 1) # Card BG color (lovelace + settings)
-      card-background-color: rgba(20, 20, 20, 1)
-      sidebar-background-color: rgba(0, 0, 0, 1) # Sidebar BG color
-      primary-background-color: rgba(0, 0, 0, 1) # Settings, .. BG color
+      # Core backgrounds (true black for AMOLED)
+      lovelace-background: "rgb(0, 0, 0)"
+      primary-background-color: "rgb(0, 0, 0)"
+      secondary-background-color: "rgb(10, 10, 10)"
+      sidebar-background-color: "rgb(0, 0, 0)"
+
+      # Cards / surfaces
+      ha-card-background: "rgb(20, 20, 20)"
+      card-background-color: "rgb(20, 20, 20)"
+      ha-card-border-width: "0px"
+      ha-card-border-radius: "12px"
+
+      # App header / status bar (important for companion apps)
+      app-header-background-color: "rgb(0, 0, 0)"
+      app-header-edit-background-color: "rgb(0, 0, 0)"
+      app-header-text-color: "rgb(255, 255, 255)"
+      app-theme-color: "rgb(0, 0, 0)"
+
+      # Dividers / borders
+      divider-color: "rgba(255, 255, 255, 0.08)"
+      outline-color: "rgba(255, 255, 255, 0.12)"
+
+      # Text (keep high contrast on pure black)
+      primary-text-color: "rgb(255, 255, 255)"
+      secondary-text-color: "rgb(180, 180, 180)"
+      disabled-text-color: "rgb(100, 100, 100)"
+      text-primary-color: "rgb(255, 255, 255)"
 
 Amoled+ Dyn:
   modes:
-    light: {}
+    light: {}   # inherit default HA light theme completely
     dark:
-      lovelace-background: rgba(0, 0, 0, 1) # Lovelace BG color
-      sidebar-background-color: rgba(0, 0, 0, 1) # Sidebar BG color
-      primary-background-color: rgba(0, 0, 0, 1) # Settings, .. BG color
-      ha-card-border-width: 2px
-      ha-card-background: rgba(0, 0, 0, 1) # Card BG color (lovelace + settings)
-      card-background-color: rgba(0, 0, 0, 1)
-      app-header-background-color: rgba(0, 0, 0, 1)
-      app-header-edit-background-color: rgba(0, 0, 0, 1)
+      # Core backgrounds – everything pure black
+      lovelace-background: "rgb(0, 0, 0)"
+      primary-background-color: "rgb(0, 0, 0)"
+      secondary-background-color: "rgb(0, 0, 0)"
+      sidebar-background-color: "rgb(0, 0, 0)"
+
+      # Cards also pure black (no elevated surface)
+      ha-card-background: "rgb(0, 0, 0)"
+      card-background-color: "rgb(0, 0, 0)"
+      ha-card-border-width: "1px"
+      ha-card-border-color: "rgba(255, 255, 255, 0.08)"
+      ha-card-border-radius: "12px"
+
+      # App header / status bar
+      app-header-background-color: "rgb(0, 0, 0)"
+      app-header-edit-background-color: "rgb(0, 0, 0)"
+      app-header-text-color: "rgb(255, 255, 255)"
+      app-theme-color: "rgb(0, 0, 0)"
+
+      # Dividers / borders
+      divider-color: "rgba(255, 255, 255, 0.08)"
+      outline-color: "rgba(255, 255, 255, 0.12)"
+
+      # Text
+      primary-text-color: "rgb(255, 255, 255)"
+      secondary-text-color: "rgb(180, 180, 180)"
+      disabled-text-color: "rgb(100, 100, 100)"
+      text-primary-color: "rgb(255, 255, 255)"
