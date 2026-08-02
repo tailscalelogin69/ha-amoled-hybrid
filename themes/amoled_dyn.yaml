@@ -11,7 +11,6 @@
 # 4. Profile → Theme mode → Auto  (follows system light/dark)
 
 Amoled Dyn:
-  # Mode-independent (applied on top of the chosen base theme)
   modes:
     light: {}   # inherit default HA light theme completely
     dark:
@@ -32,6 +31,16 @@ Amoled Dyn:
       app-header-edit-background-color: "rgb(0, 0, 0)"
       app-header-text-color: "rgb(255, 255, 255)"
       app-theme-color: "rgb(0, 0, 0)"
+
+      # Sidebar icons & text (match default HA dark visibility)
+      sidebar-icon-color: "rgba(255, 255, 255, 0.55)"
+      sidebar-text-color: "rgba(255, 255, 255, 0.87)"
+      sidebar-selected-icon-color: "rgb(255, 255, 255)"
+      sidebar-selected-text-color: "rgb(255, 255, 255)"
+      sidebar-selected-background-color: "rgba(255, 255, 255, 0.08)"
+
+      # State / general icons
+      state-icon-color: "rgba(255, 255, 255, 0.55)"
 
       # Dividers / borders
       divider-color: "rgba(255, 255, 255, 0.08)"
@@ -65,6 +74,16 @@ Amoled+ Dyn:
       app-header-edit-background-color: "rgb(0, 0, 0)"
       app-header-text-color: "rgb(255, 255, 255)"
       app-theme-color: "rgb(0, 0, 0)"
+
+      # Sidebar icons & text (match default HA dark visibility)
+      sidebar-icon-color: "rgba(255, 255, 255, 0.55)"
+      sidebar-text-color: "rgba(255, 255, 255, 0.87)"
+      sidebar-selected-icon-color: "rgb(255, 255, 255)"
+      sidebar-selected-text-color: "rgb(255, 255, 255)"
+      sidebar-selected-background-color: "rgba(255, 255, 255, 0.08)"
+
+      # State / general icons
+      state-icon-color: "rgba(255, 255, 255, 0.55)"
 
       # Dividers / borders
       divider-color: "rgba(255, 255, 255, 0.08)"
