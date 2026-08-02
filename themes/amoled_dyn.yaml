@@ -32,12 +32,14 @@ Amoled Dyn:
       app-header-text-color: "rgb(255, 255, 255)"
       app-theme-color: "rgb(0, 0, 0)"
 
-      # Sidebar icons & text (match default HA dark visibility)
+      # Sidebar icons & text
+      # Unselected = medium gray (default HA dark visibility)
+      # Selected = classic HA primary blue
       sidebar-icon-color: "rgba(255, 255, 255, 0.55)"
       sidebar-text-color: "rgba(255, 255, 255, 0.87)"
-      sidebar-selected-icon-color: "rgb(255, 255, 255)"
-      sidebar-selected-text-color: "rgb(255, 255, 255)"
-      sidebar-selected-background-color: "rgba(255, 255, 255, 0.08)"
+      sidebar-selected-icon-color: "#03A9F4"
+      sidebar-selected-text-color: "#03A9F4"
+      sidebar-selected-background-color: "rgba(3, 169, 244, 0.12)"
 
       # State / general icons
       state-icon-color: "rgba(255, 255, 255, 0.55)"
@@ -75,12 +77,12 @@ Amoled+ Dyn:
       app-header-text-color: "rgb(255, 255, 255)"
       app-theme-color: "rgb(0, 0, 0)"
 
-      # Sidebar icons & text (match default HA dark visibility)
+      # Sidebar icons & text
       sidebar-icon-color: "rgba(255, 255, 255, 0.55)"
       sidebar-text-color: "rgba(255, 255, 255, 0.87)"
-      sidebar-selected-icon-color: "rgb(255, 255, 255)"
-      sidebar-selected-text-color: "rgb(255, 255, 255)"
-      sidebar-selected-background-color: "rgba(255, 255, 255, 0.08)"
+      sidebar-selected-icon-color: "#03A9F4"
+      sidebar-selected-text-color: "#03A9F4"
+      sidebar-selected-background-color: "rgba(3, 169, 244, 0.12)"
 
       # State / general icons
       state-icon-color: "rgba(255, 255, 255, 0.55)"
